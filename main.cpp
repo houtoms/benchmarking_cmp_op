@@ -31,15 +31,11 @@ int main(int argc, char **argv)
     }
     cout << "done" << endl;
 
-    // int a = rand(), b = rand();
     int c;
     double tic, toc;
     tic = dtime();
     for (int i = 0; i < TIMES; i++)
     {
-        // if(rand() == rand())
-        // if(100 == 100)
-        // if(a > b)
         if(i_a[i] > i_b[i])
             c = 1;
         else
@@ -47,17 +43,13 @@ int main(int argc, char **argv)
     }
     toc = dtime();
     cout << "int compare: " << toc - tic << " s" << endl;
-    cout << "int result check: " << c << " s" << endl;
+    cout << "int result check: " << c << endl;
 
     srand(1);
-    float x = rand(), y = rand();
     int z;
     tic = dtime();
     for (int i = 0; i < TIMES; i++)
     {
-        // if((float)rand() == (float)rand())
-        // if(100.0f == 100.0f)
-        // if(x > y)
         if(f_a[i] > f_b[i])
             z = 1;
         else
@@ -65,17 +57,13 @@ int main(int argc, char **argv)
     }
     toc = dtime();
     cout << "flt compare: " << toc - tic << " s" << endl;
-    cout << "flt result check: " << z << " s" << endl;
+    cout << "flt result check: " << z << endl;
 
     srand(1);
-    double alpha = rand(), beta = rand();
     int gamma;
     tic = dtime();
     for (int i = 0; i < TIMES; i++)
     {
-        // if((double)rand() == (double)rand())
-        // if(100.0 == 100.0)
-        // if(alpha > beta)
         if(d_a[i] > d_b[i])
             gamma = 1;
         else
@@ -83,7 +71,7 @@ int main(int argc, char **argv)
     }
     toc = dtime();
     cout << "dbl compare: " << toc - tic << " s" << endl;
-    cout << "dbl result check: " << gamma << " s" << endl;
+    cout << "dbl result check: " << gamma << endl;
 
     free(i_a);
     free(i_b);
