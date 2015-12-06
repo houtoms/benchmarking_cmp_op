@@ -5,4 +5,4 @@ all:
 	icpc main.cpp -o main.out ${CFLAGS}  
 
 clean:
-	rm main.out
+	rm *.out *.s *.optrpt
