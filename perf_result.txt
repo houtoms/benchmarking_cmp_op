@@ -14,3 +14,11 @@ flt compare: 0.955755 s
 flt result check: 0
 dbl compare: 0.95806 s
 dbl result check: 0
+// with -O2 -no-vec
+init ... done
+int compare: 0.052882 s
+int result check: 1
+flt compare: 0.051456 s
+flt result check: 0
+dbl compare: 0.096467 s
+dbl result check: 0
